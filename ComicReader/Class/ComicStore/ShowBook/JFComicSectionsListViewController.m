@@ -97,6 +97,11 @@ static NSString *selectedIdentifier = @"JFComicSelectedReusableViewIdentifier";
 
 #pragma mark - delegate
 #pragma mark collection
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    [collectionView.collectionViewLayout invalidateLayout];
+    return 1;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return _isShowContent? 1: _contentModel.comics.count;
 }
