@@ -82,7 +82,7 @@ static NSString *cellIdentifier = @"JFComicShowImageContentCellIdentifier";
     [cell.contentImageView sd_setImageWithURL:[NSURL URLWithString:model.cover_image_url]
                                     completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL)
      {
-         if (image) {
+         if (image && !model.contentHeight) {
              model.contentHeight = @((kScreenWidth - 10)/ image.size.width * image.size.height);
              [CATransaction begin];
              [CATransaction setDisableActions:YES];
@@ -94,12 +94,12 @@ static NSString *cellIdentifier = @"JFComicShowImageContentCellIdentifier";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat height = 250 * 320/ 375.0;
+    static CGFloat height = 250 * (320.0/ 375.0);
     JFComicReaderBookContentModel *model = _contentModel.images[indexPath.row];
     if (model.contentHeight) {
         height = model.contentHeight.floatValue;
     }
-    return CGSizeMake(kScreenWidth - 10, floorf(height * kScreen375Scale));
+    return CGSizeMake(kScreenWidth - 10, floorf(height));
 }
 
 @end

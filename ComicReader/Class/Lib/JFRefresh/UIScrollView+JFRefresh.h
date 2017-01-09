@@ -11,7 +11,7 @@
 
 @interface UIScrollView (JFRefresh)
 
-@property (nonatomic, strong) JFRefreshControl *refreshControl;
+@property (nonatomic, strong) JFRefreshControl *jf_refreshControl;
 
 - (void)addHeaderWithAction:(void (^)(NSInteger index))action;
 - (void)addHeaderWithAction:(void (^)(NSInteger index))action
