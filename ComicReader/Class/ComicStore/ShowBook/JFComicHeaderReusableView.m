@@ -49,7 +49,7 @@
     [super layoutSubviews];
     
     self.maskValue = MAX(self.imageHeight - self.height, 0)/ self.imageHeight;
-    CGFloat maskValue = MAX(self.imageHeight - (self.height - (44 + DD_TOP_ACTIVE_SPACE)), 0)/ self.imageHeight;
+    CGFloat maskValue = MAX(self.imageHeight - (self.height - (64 + DD_TOP_ACTIVE_SPACE)), 0)/ self.imageHeight;
     self.backButton.imageView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5 * (1 - maskValue)];
     self.backButton.imageView.centerX = 40;
     [CATransaction begin];//去除隐性动画

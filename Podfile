@@ -8,10 +8,10 @@ target 'ComicReader' do
   # use_frameworks!
 
   # Pods for ComicReader
-  pod 'AFNetworking'
+  pod 'AFNetworking', '~> 3.1.0'
   pod 'DBSphereTagCloud'
   pod 'MPFoldTransition'
-  pod 'SDWebImage'
+  pod 'SDWebImage', '~> 4.3.3'
   pod 'SlimeRefresh'
   pod 'AnimatedGIFImageSerialization'
   pod 'Masonry'
