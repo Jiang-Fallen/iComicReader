@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '842558D69D7AE0C87FCF429F'
-               BlueprintName = 'AnimatedGIFImageSerialization'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libAnimatedGIFImageSerialization.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "383A3176BE07CA00D8F11281C405F57F"
+               BlueprintName = "AnimatedGIFImageSerialization"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libAnimatedGIFImageSerialization.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

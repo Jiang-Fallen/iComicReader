@@ -14,6 +14,7 @@
 #import "AFNetworking.h"
 #import "DocumentTool.h"
 
+
 @implementation ComicStoreTool
 
 #pragma mark - Request Method
@@ -22,8 +23,8 @@
     
     NSString *urlString = @"http://api.kuaikanmanhua.com/v1/banners";
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray *array = responseObject[@"data"][@"banner_group"];
         if (array && array.count > 0) {
             [DocumentTool sharedDocumentTool].headerData = array;
@@ -33,67 +34,118 @@
         
         NSMutableArray *modelArray = [HeaderModel modelArrayForDataArray:array];
         success(modelArray);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(error);
     }];
 }
 
-- (void)requestArrayByComicStoreListModelCompletion:(void (^)(NSMutableArray *blockListArray))success
-                                               failure:(void (^)(NSError *error))failure{
+- (void)requestBannerList:(void (^)(NSMutableArray *blockListArray))success
+                  failure:(void (^)(NSError *error))failure{
     
-    RequestTool *request = [RequestTool sharedRequestTool];
-    [request requestArrayByAsquireComicStoreListModelCompletion:^(NSDictionary *responseObject) {
-
-    } failure:^(NSError *error) {
-        failure(error);
-    }];
-}
-
-- (void)requestArrayByComicStoreModelCompletion:(void (^)(NSMutableArray *blockHeaderArray,
-                                                          NSMutableArray *blockListArray))success
-                                        failure:(void (^)(NSError *error))failure
-{
-    [self requestArrayByAsquireHeaderModelCompletion:^(NSMutableArray *blockHeaderArray) {
-        [self requestArrayByComicStoreListModelCompletion:^(NSMutableArray *blockListArray) {
-            success(blockHeaderArray, blockListArray);
-        } failure:^(NSError *error) {
+    NSString *urlString = @"https://api.kkmh.com/v1/topic_new/discovery_list";
+    
+    NSDictionary *params = @{@"gender": @1,
+                             @"operator_count": @9,
+                             };
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer.timeoutInterval = 30.f;
+    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    
+    [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if ([responseObject[@"code"] intValue] != 200) {
+            NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:[responseObject[@"code"] intValue] userInfo:nil];
             failure(error);
-        }];
-    } failure:^(NSError *error) {
+            return ;
+        }
+        NSArray *infos = responseObject[@"data"][@"infos"];
+        
+        if (!infos || infos.count == 0) {
+            NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:[responseObject[@"code"] intValue] userInfo:nil];
+            failure(error);
+            return;
+        }
+        
+        NSArray *array = infos.firstObject[@"topics"];
+        NSMutableArray *modelArray = [HeaderModel modelArrayForDataArray:array];
+        success(modelArray);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(error);
     }];
 }
 
+- (void)requestNewsList:(void (^)(NSMutableArray *blockListArray))success
+                failure:(void (^)(NSError *error))failure{
+    
+    NSString *urlString = @"https://api.kkmh.com/v1/daily/comic_lists/0";
+    
+    NSDictionary *params = @{@"gender": @1,
+                             @"new_device": @NO,
+                             @"since": @0,
+                             };
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer.timeoutInterval = 30.f;
+    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    
+    [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if ([responseObject[@"code"] intValue] != 200) {
+            NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:[responseObject[@"code"] intValue] userInfo:nil];
+            failure(error);
+            return ;
+        }
+        NSArray *array = responseObject[@"data"][@"comics"];
+        
+        NSMutableArray *modelArray = [HeaderModel modelArrayForNewsData:array];
+        success(modelArray);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failure(error);
+    }];
+}
+
+- (void)requestCategoryList:(void (^)(NSMutableArray *blockListArray))success
+                    failure:(void (^)(NSError *error))failure{
+    
+    NSString *urlString = @"https://api.kkmh.com/v1/topic_new/lists/get_by_tag";
+    
+    NSDictionary *params = @{@"count": @20,
+                             @"since": @0,
+                             @"tag": @0,
+                             @"gender": @1,
+                             @"sort": @1,
+                             @"query_category": @{@"pay_status": @-1, @"update_status": @-1}
+                             };
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if ([responseObject[@"code"] intValue] != 200) {
+            NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:[responseObject[@"code"] intValue] userInfo:nil];
+            failure(error);
+            return ;
+        }
+        NSArray *array = responseObject[@"data"][@"tags"];
+        NSMutableArray *modelArray = [NewStoreTitleModel modelArrayByDataArray:array];
+        success(modelArray);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failure(error);
+    }];
+}
 
 - (void)requestComicStoreNewModelCompletion:(void (^)(NSMutableArray *blockHeaderArray,
                                                       NSMutableArray *blockListArray))success
                                     failure:(void (^)(NSError *error))failure
 {
-    NewRequestTool *request = [NewRequestTool sharedRequestTool];
-    [self requestArrayByAsquireHeaderModelCompletion:^(NSMutableArray *blockHeaderArray) {
-        [request requestTitleModelCompletion:^(NSDictionary *responseObject) {
-            NSMutableArray *array = [NewStoreTitleModel modelArrayByDataArray:responseObject[@"data"][@"suggestion"]];
-            success(blockHeaderArray, array);
-        } failure:^(NSError *error) {
+    __weak typeof(self) weakSelf = self;
+    [self requestNewsList:^(NSMutableArray *blockHeaderArray) {
+        [weakSelf requestCategoryList:^(NSMutableArray *blockListArray) {
+            success(blockHeaderArray, blockListArray);
+        }failure:^(NSError *error) {
             failure(error);
         }];
     } failure:^(NSError *error) {
         failure(error);
     }];
 }
-- (void)requestComicStoreContentListNewModelCompletion:(NSString*)requestMethod
-                               parameters:(id)parameters
-                                  success:(void (^)(NSMutableArray *))success
-                                  failure:(void (^)(NSError *))failure
-{
-    [[NewRequestTool sharedRequestTool] requestContentListModelCompletion:requestMethod parameters:parameters success:^(NSMutableArray *responseObject) {
-        
-    } failure:^(NSError *error) {
-        failure(error);
-    }];
-}
-
-
 
 #pragma mark - 单例实现
 static ComicStoreTool *_instance;

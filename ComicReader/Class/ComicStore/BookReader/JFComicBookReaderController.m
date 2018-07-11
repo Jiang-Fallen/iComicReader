@@ -51,10 +51,10 @@ static NSString *cellIdentifier = @"JFComicShowImageContentCellIdentifier";
     NSString *urlString = [NSString stringWithFormat:@"%@%@", headerURLString, _bookID];
     
     __unsafe_unretained typeof(self) p = self;
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         p.contentModel = [[JFComicReaderBookModel alloc]initWithDictionary:responseObject[@"data"]];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [KVNProgress showErrorWithParameters:@{KVNProgressViewParameterStatus: @"网络不给力！",
                                                KVNProgressViewParameterFullScreen: @(NO)}];
     }];
@@ -86,7 +86,12 @@ static NSString *cellIdentifier = @"JFComicShowImageContentCellIdentifier";
              model.contentHeight = @((kScreenWidth - 10)/ image.size.width * image.size.height);
              [CATransaction begin];
              [CATransaction setDisableActions:YES];
-             [collectionView reloadItemsAtIndexPaths:@[indexPath]];
+             @try{
+                [collectionView reloadItemsAtIndexPaths:@[indexPath]];
+             }
+             @catch (NSException *exception){
+                 
+             }
              [CATransaction commit];
          }
      }];

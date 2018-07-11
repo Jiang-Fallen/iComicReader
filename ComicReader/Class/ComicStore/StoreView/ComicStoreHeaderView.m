@@ -10,6 +10,11 @@
 #import "HeaderModel.h"
 #import "UIImageView+WebCache.h"
 #import "SShowPageShapeView.h"
+#import "ComicStoreHeaderView.h"
+#import "ListContentModel.h"
+#import "JFComicSectionsListViewController.h"
+
+#define kImageTagOrigin 300
 
 typedef enum{
     previous = 0,
@@ -53,8 +58,11 @@ typedef enum{
 
 #pragma mark 重置ImageView位置
 - (void)resetScrollViewContentLocation{
+    if (self.modelArray.count <= 1) {
+        return;
+    }
     self.page.currentPage = _index;
-
+    
     for (int i = 0; i < self.showPictureImageArray.count; i ++) {
         NSInteger index = _index - 1 + i;
         if (index < 0) {
@@ -63,6 +71,7 @@ typedef enum{
             index = index - self.modelArray.count;
         }
         UIImageView *imageView = self.showPictureImageArray[i];
+        imageView.tag = kImageTagOrigin + index;
         HeaderModel *currentModel = self.modelArray[index];
         NSURL *currentURL = [NSURL URLWithString:currentModel.pic];
         [imageView sd_setImageWithURL:currentURL placeholderImage:self.placeholderImage];
@@ -134,6 +143,10 @@ typedef enum{
         imageView.layer.masksToBounds = YES;
         imageView.image = self.placeholderImage;
         
+        imageView.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchAction:)];
+        [imageView addGestureRecognizer:tap];
+        
         [self.scrollView addSubview:imageView];
         [self.showPictureImageArray addObject:imageView];
     }
@@ -155,6 +168,15 @@ typedef enum{
         _placeholderImage = [UIImage imageNamed:@"community_cover_item"];
     }
     return _placeholderImage;
+}
+
+#pragma mark - touch
+- (void)touchAction:(UIGestureRecognizer *)tap{
+    NSInteger index = tap.view.tag - kImageTagOrigin;
+    HeaderModel *currentModel = self.modelArray[index];
+    JFComicSectionsListViewController *controller = [[JFComicSectionsListViewController alloc]init];
+    controller.bookID = currentModel.target_id;
+    [[JFJumpToControllerManager shared].navigation pushViewController:controller animated:YES];
 }
 
 @end

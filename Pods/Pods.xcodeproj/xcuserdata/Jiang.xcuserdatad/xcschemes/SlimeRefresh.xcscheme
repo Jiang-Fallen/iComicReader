@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C687C16FE9945CA07A6270C1'
-               BlueprintName = 'SlimeRefresh'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libSlimeRefresh.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2CECC45696523464A417CC5973539B6C"
+               BlueprintName = "SlimeRefresh"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libSlimeRefresh.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

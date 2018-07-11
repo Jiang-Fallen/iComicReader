@@ -81,9 +81,9 @@ static NSString *showContentCellIdentifier = @"JFComicShowContentContentCellIden
     }
     
     if (_pageIndex == 0) [KVNProgress show];
-    __unsafe_unretained typeof(self) p = self;
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:urlString parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    __weak typeof(self) p = self;
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [p.contentCollectionView stopLoadMoreAnimation];
         [KVNProgress dismiss];
         NSMutableArray *array = [ListContentModel modelArrayForDataArray:responseObject[@"data"][@"topics"]];
@@ -97,7 +97,7 @@ static NSString *showContentCellIdentifier = @"JFComicShowContentContentCellIden
             [p.contentModelArray addObjectsFromArray:array];
             [p.contentCollectionView reloadData];
         }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [KVNProgress dismiss];
         [KVNProgress showErrorWithParameters:@{KVNProgressViewParameterStatus: @"网络不给力！",
                                                KVNProgressViewParameterFullScreen: @(NO)}];

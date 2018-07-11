@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5BC3A1B0EC4BF6C021080538'
-               BlueprintName = 'MPFoldTransition'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMPFoldTransition.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6FED4FAC0F5A5551E3BECF29674C137A"
+               BlueprintName = "MPFoldTransition"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libMPFoldTransition.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

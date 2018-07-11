@@ -1,5 +1,4 @@
 
-
 #define kMyComicCell @"comicCell"
 #define kMyComicImageWidth  138.0
 #define kMyComicCellHeight 186.0
@@ -29,6 +28,8 @@
 
 #define kCellMinHeight kScreen320Scale * 55.0
 #define kCellMaxHeight kScreen320Scale * 160.0
+
+//------------------------------
 
 #define kRequestURL @"http://mhjk.1391.com/comic"
 #define kGetProad @"getproad"
@@ -66,10 +67,12 @@ green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 \
 alpha:1.0]
 
+#import "AppDelegate.h"
 #import "Masonry.h"
 #import "UIView+JFFrame.h"
 #import "UIImageView+WebCache.h"
 #import "AFNetWorking.h"
 #import "KVNProgress.h"
 #import "JFJumpToControllerManager.h"
+#import "CRConfig.h"
 

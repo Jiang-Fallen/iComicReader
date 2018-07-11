@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0E58D62235C249B8F1BD51C4'
-               BlueprintName = 'DBSphereTagCloud'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libDBSphereTagCloud.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36D7575AF9601C7E73E62057BC423630"
+               BlueprintName = "DBSphereTagCloud"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libDBSphereTagCloud.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

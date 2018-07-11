@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *maskImageView; //这个ImageView用来减少计算量，只计算一次，通过alpha通道调整虚化程度
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIView *titleContentView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backTopLayout;
 
 @property (nonatomic, strong) ListContentModel *contentModel;
 @property (nonatomic, assign) CGFloat imageHeight;

@@ -1,37 +1,31 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - AnimatedGIFImageSerialization (0.2.0)
   - DBSphereTagCloud (1.0.0)
   - FXBlurView (1.6.4)
-  - Masonry (1.0.0)
+  - Masonry (1.1.0)
   - MPFoldTransition (0.0.1)
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
   - SlimeRefresh (0.0.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.0)
+  - AFNetworking
   - AnimatedGIFImageSerialization
   - DBSphereTagCloud
   - FXBlurView
@@ -40,14 +34,27 @@ DEPENDENCIES:
   - SDWebImage
   - SlimeRefresh
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AnimatedGIFImageSerialization
+    - DBSphereTagCloud
+    - FXBlurView
+    - Masonry
+    - MPFoldTransition
+    - SDWebImage
+    - SlimeRefresh
+
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   AnimatedGIFImageSerialization: b0f0cfe71eac1ee45a3d57ae533c23b8e6f29501
   DBSphereTagCloud: 57b9571e93b3565fc22cd65040eabbada06b56f2
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
-  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MPFoldTransition: b863db88c4cbda72ac62442aa196d4392bb497a1
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   SlimeRefresh: c70e370dccfa8d74d4c3ff9702769d2b156a50e6
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: e0b9420d68a2de33f92c6142a0f57bc697ad2727
+
+COCOAPODS: 1.5.2

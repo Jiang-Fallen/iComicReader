@@ -79,15 +79,21 @@
 }
 
 - (void)requestDataForContentListWithModel:(NewStoreTitleModel *)model{
-    NSString *urlString = @"http://api.kuaikanmanhua.com/v1/topics";
-    NSDictionary *parameter = @{@"limit": @(model.contentCount),
-                                @"offset": @0,
-                                @"tag": model.title};
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:urlString parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSString *urlString = @"https://api.kkmh.com/v1/topic_new/lists/get_by_tag";
+    
+    NSDictionary *parameter = @{@"count": @(model.contentCount),
+                                @"since": @0,
+                                @"tag": model.tag_id,
+                                @"gender": @1,
+                                @"sort": @1,
+                                @"query_category": @{@"pay_status": @-1, @"update_status": @-1}};
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableArray *array = [ListContentModel modelArrayForDataArray:responseObject[@"data"][@"topics"]];
         model.contentArray = array;
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
     }];
 }
 
@@ -123,7 +129,7 @@
 
 - (void)initWithContentView{
     CGRect rect = self.view.bounds;
-    rect.origin.y = 20;
+    rect.origin.y = 20 + DD_TOP_ACTIVE_SPACE;
     rect.size.height -= 20;
     ContentListView *contentListView = [[ContentListView alloc]initWithFrame:rect];
     [self.view insertSubview:contentListView atIndex:0];
@@ -135,7 +141,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     CALayer *backLayer = [CALayer layer];
-    backLayer.frame = CGRectMake(0, 0, kScreenWidth, 20);
+    backLayer.frame = CGRectMake(0, 0, kScreenWidth, 20 + DD_TOP_ACTIVE_SPACE);
     backLayer.backgroundColor = UIColorFromRGB(0xFFBF00).CGColor;
     backLayer.zPosition = 10;
     [self.view.layer addSublayer:backLayer];

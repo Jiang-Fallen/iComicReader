@@ -31,6 +31,24 @@
     return array;
 }
 
++ (NSMutableArray *)modelArrayForNewsData:(NSArray *)dataArray{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:dataArray.count];
+    
+    NSInteger count = 0;
+    for (NSDictionary *dict in dataArray) {
+        count ++;
+        if (count > 8) {
+            break;
+        }
+        HeaderModel *model = [[HeaderModel alloc] init];
+        model.pic = dict[@"topic"][@"cover_image_url"];
+        model.title = dict[@"topic"][@"title"];
+        model.target_id = dict[@"topic"][@"id"];
+        [array addObject:model];
+    }
+    return array;
+}
+
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
     
 }

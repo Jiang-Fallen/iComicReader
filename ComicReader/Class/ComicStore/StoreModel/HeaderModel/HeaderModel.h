@@ -12,6 +12,7 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *pic;
+@property (nonatomic, copy) NSString *target_id;
 
 @property (nonatomic, strong) NSNumber *type;
 @property (nonatomic, strong) NSNumber *value;
@@ -20,5 +21,6 @@
 - (instancetype)initWithDictionary:(NSDictionary*)dict;
 
 + (NSMutableArray *)modelArrayForDataArray:(NSArray *)dataArray;
++ (NSMutableArray *)modelArrayForNewsData:(NSArray *)dataArray;
 
 @end

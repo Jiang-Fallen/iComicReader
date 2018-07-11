@@ -24,8 +24,10 @@
     self.backButton.imageView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
     [self.titleLabel setTranslatesAutoresizingMaskIntoConstraints:YES];
     self.titleLabel.height = self.titleContentView.height;
+    self.layer.zPosition = 10;
     self.contentImageView.layer.zPosition = -2;
     self.maskImageView.layer.zPosition = -1;
+    self.backTopLayout.constant = 20 + DD_TOP_ACTIVE_SPACE;
     [self addGradient];
 }
 
@@ -47,8 +49,9 @@
     [super layoutSubviews];
     
     self.maskValue = MAX(self.imageHeight - self.height, 0)/ self.imageHeight;
-    CGFloat maskValue = MAX(self.imageHeight - (self.height - 64), 0)/ self.imageHeight;
+    CGFloat maskValue = MAX(self.imageHeight - (self.height - (44 + DD_TOP_ACTIVE_SPACE)), 0)/ self.imageHeight;
     self.backButton.imageView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5 * (1 - maskValue)];
+    self.backButton.imageView.centerX = 40;
     [CATransaction begin];//去除隐性动画
     [CATransaction setDisableActions:YES];
     self.gradientLayer.opacity = (1 - maskValue);
@@ -56,7 +59,7 @@
     
     CGFloat title_X = 0.0;
     BOOL isTitleCenter;
-    if (self.titleContentView.originY > 44) {
+    if (self.titleContentView.originY > 44 + DD_TOP_ACTIVE_SPACE) {
         title_X = 10;
         isTitleCenter = NO;
     }else{

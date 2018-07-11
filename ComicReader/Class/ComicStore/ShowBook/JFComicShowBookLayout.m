@@ -30,7 +30,7 @@
 }
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
-    rect.origin.y -= _headerHeight;
+    rect.origin.y -= _headerHeight + DD_TOP_ACTIVE_SPACE;
     NSArray *itemArray = [super layoutAttributesForElementsInRect:rect];
     NSIndexPath *indexPath = [[NSIndexPath alloc]initWithIndexes:0 length:0];
     UICollectionViewLayoutAttributes *headerAttribute = [self layoutAttributesForSupplementaryViewOfKind:JFHeaderKind
@@ -41,7 +41,7 @@
     
     for (UICollectionViewLayoutAttributes *attribute in itemArray) {
         CGRect frame = attribute.frame;
-        frame.origin.y += _headerHeight;
+        frame.origin.y += _headerHeight + DD_TOP_ACTIVE_SPACE;
         attribute.frame = frame;
         attribute.zIndex = 0;
     }
@@ -62,7 +62,7 @@
     }else{
         height = _headerHeight - offset_Y;
     }
-    attribute.frame = CGRectMake(0, offset_Y, kScreenWidth, height);
+    attribute.frame = CGRectMake(0, offset_Y, kScreenWidth, height + DD_TOP_ACTIVE_SPACE);
 }
 
 -(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds

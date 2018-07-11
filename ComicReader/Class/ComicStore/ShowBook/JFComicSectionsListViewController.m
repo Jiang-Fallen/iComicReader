@@ -14,6 +14,7 @@
 #import "JFComicSelectedReusableView.h"
 #import "JFComicBookReaderController.h"
 #import "ListContentModel.h"
+#import "AFNetworking.h"
 
 @interface JFComicSectionsListViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, JFComicSelectedReusableViewDelegate>
 {
@@ -76,12 +77,14 @@ static NSString *selectedIdentifier = @"JFComicSelectedReusableViewIdentifier";
     NSString *urlString = [NSString stringWithFormat:@"%@%@", headerURLString, _bookID];
     
     NSDictionary *parameter = @{@"sort": @(_sortUP)};
-    __unsafe_unretained typeof(self) p = self;
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:urlString parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    __weak typeof(self) p = self;
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    [manager GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [KVNProgress dismiss];
         p.contentModel = [[ListContentModel alloc]initWithDictionary:responseObject[@"data"]];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         _sortUP = !_sortUP;
         [KVNProgress dismiss];
         [KVNProgress showErrorWithParameters:@{KVNProgressViewParameterStatus: @"网络不给力！",

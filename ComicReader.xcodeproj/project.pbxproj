@@ -36,7 +36,6 @@
 		044664521AFDD77B00C3B3AF /* ComicShowBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 044664511AFDD77B00C3B3AF /* ComicShowBookModel.m */; };
 		044664601AFE153F00C3B3AF /* ComicStoreBookContentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446645F1AFE153F00C3B3AF /* ComicStoreBookContentListModel.m */; };
 		044FA33D1A3FD0F40069A867 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FA33C1A3FD0F40069A867 /* Reachability.m */; };
-		044FA33F1A3FD10B0069A867 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044FA33E1A3FD10B0069A867 /* SystemConfiguration.framework */; };
 		045F45971B0F7AF4003BDD70 /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F45911B0F7AF4003BDD70 /* UIImage+KVNEmpty.m */; };
 		045F45981B0F7AF4003BDD70 /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F45931B0F7AF4003BDD70 /* UIImage+KVNImageEffects.m */; };
 		045F45991B0F7AF4003BDD70 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F45961B0F7AF4003BDD70 /* KVNProgress.m */; };
@@ -57,7 +56,6 @@
 		04ACB6231A2D50DD00A9FAA6 /* ComicReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB6211A2D50DD00A9FAA6 /* ComicReader.xcdatamodeld */; };
 		04ACB6291A2D50DD00A9FAA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ACB6271A2D50DD00A9FAA6 /* Main.storyboard */; };
 		04ACB62E1A2D50DD00A9FAA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ACB62C1A2D50DD00A9FAA6 /* LaunchScreen.xib */; };
-		04ACB63A1A2D50DD00A9FAA6 /* ComicReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB6391A2D50DD00A9FAA6 /* ComicReaderTests.m */; };
 		04ACB6461A2D586200A9FAA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ACB6451A2D586200A9FAA6 /* Images.xcassets */; };
 		04D478E71A63BDA600236C4A /* ResizeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D478E61A63BDA600236C4A /* ResizeLabel.m */; };
 		04E642AE1A64B27400FDEFF7 /* NSMutableAttributedString+TitleTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E642AD1A64B27400FDEFF7 /* NSMutableAttributedString+TitleTreatment.m */; };
@@ -65,7 +63,6 @@
 		04E642B41A64C57D00FDEFF7 /* ComicStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E642B31A64C57D00FDEFF7 /* ComicStoreTool.m */; };
 		04E642C91A6507B200FDEFF7 /* HeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E642BB1A6507B200FDEFF7 /* HeaderModel.m */; };
 		04E642CB1A6507B200FDEFF7 /* ListContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E642C01A6507B200FDEFF7 /* ListContentModel.m */; };
-		9D899B0A598386141FC19B40 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521533871A11B515AB29F8C4 /* libPods.a */; };
 		EE3D0B5C1CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D0B5A1CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.m */; };
 		EE3D0B5D1CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D0B5B1CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.xib */; };
 		EE3D0B611CD4DF7D008A6FDA /* JFComicShowImageContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D0B5F1CD4DF7D008A6FDA /* JFComicShowImageContentCell.m */; };
@@ -80,7 +77,6 @@
 		EE50B32D1CD5D8D0009E212B /* JFComicMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE50B32B1CD5D8D0009E212B /* JFComicMoreViewController.m */; };
 		EE50B32E1CD5D8D0009E212B /* JFComicMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE50B32C1CD5D8D0009E212B /* JFComicMoreViewController.xib */; };
 		EE50B3311CD5E2C1009E212B /* JFJumpToControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE50B3301CD5E2C1009E212B /* JFJumpToControllerManager.m */; };
-		EE5D953C1CD74A8C0045B1BB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D953B1CD74A8C0045B1BB /* Accelerate.framework */; };
 		EE5D953F1CD757C30045B1BB /* JFComicBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D953E1CD757C30045B1BB /* JFComicBackButton.m */; };
 		EE5D95431CD7942C0045B1BB /* JFComicBookReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D95411CD7942C0045B1BB /* JFComicBookReaderController.m */; };
 		EE5D95441CD7942C0045B1BB /* JFComicBookReaderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5D95421CD7942C0045B1BB /* JFComicBookReaderController.xib */; };
@@ -103,19 +99,11 @@
 		EE99CCB31CD4D9C00043F704 /* JFComicStoreListBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99CCB21CD4D9C00043F704 /* JFComicStoreListBaseCell.m */; };
 		EEEB15701C83F991009BA63C /* DocumentTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEB156F1C83F991009BA63C /* DocumentTool.m */; };
 		EEFFAC6E1C8421460072223A /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFFAC6D1C8421460072223A /* MONActivityIndicatorView.m */; };
+		FE7089719E1F4DE810460F0E /* libPods-ComicReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD552406A10E96B825A37C4B /* libPods-ComicReader.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		04ACB6341A2D50DD00A9FAA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04ACB60F1A2D50DD00A9FAA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04ACB6161A2D50DD00A9FAA6;
-			remoteInfo = ComicReader;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		03862F97DCF3225ADD5AEB30 /* Pods-ComicReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicReader/Pods-ComicReader.release.xcconfig"; sourceTree = "<group>"; };
 		040341DA1B0F71EA00886529 /* ComicBookInfoContextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicBookInfoContextModel.h; sourceTree = "<group>"; };
 		040341DB1B0F71EA00886529 /* ComicBookInfoContextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicBookInfoContextModel.m; sourceTree = "<group>"; };
 		040589091A5FA76700AB676B /* ComicStoreContentListCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicStoreContentListCollectionView.h; sourceTree = "<group>"; };
@@ -202,7 +190,6 @@
 		04ACB6221A2D50DD00A9FAA6 /* ComicReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComicReader.xcdatamodel; sourceTree = "<group>"; };
 		04ACB6281A2D50DD00A9FAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04ACB62D1A2D50DD00A9FAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		04ACB6331A2D50DD00A9FAA6 /* ComicReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComicReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACB6381A2D50DD00A9FAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ACB6391A2D50DD00A9FAA6 /* ComicReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicReaderTests.m; sourceTree = "<group>"; };
 		04ACB6451A2D586200A9FAA6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -218,9 +205,8 @@
 		04E642BB1A6507B200FDEFF7 /* HeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderModel.m; sourceTree = "<group>"; };
 		04E642BF1A6507B200FDEFF7 /* ListContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContentModel.h; sourceTree = "<group>"; };
 		04E642C01A6507B200FDEFF7 /* ListContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContentModel.m; sourceTree = "<group>"; };
-		521533871A11B515AB29F8C4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E5EE6F8801D00DE5242084 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		AE059A3FA974BEBD08D9AD25 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0A44817045427958284B6EC3 /* Pods-ComicReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComicReader/Pods-ComicReader.debug.xcconfig"; sourceTree = "<group>"; };
+		DD552406A10E96B825A37C4B /* libPods-ComicReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3D0B591CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFComicBlockingContentCellCollectionViewCell.h; sourceTree = "<group>"; };
 		EE3D0B5A1CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFComicBlockingContentCellCollectionViewCell.m; sourceTree = "<group>"; };
 		EE3D0B5B1CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFComicBlockingContentCellCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -261,6 +247,8 @@
 		EE7923C01CD72DDB00170FF5 /* JFComicHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFComicHeaderReusableView.h; sourceTree = "<group>"; };
 		EE7923C11CD72DDB00170FF5 /* JFComicHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFComicHeaderReusableView.m; sourceTree = "<group>"; };
 		EE7923C21CD72DDB00170FF5 /* JFComicHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFComicHeaderReusableView.xib; sourceTree = "<group>"; };
+		EE84169520F5F67D00BFE784 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EE84169820F5FB0B00BFE784 /* CRConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRConfig.h; sourceTree = "<group>"; };
 		EE99CC8F1CD4753E0043F704 /* SShowPageShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SShowPageShapeView.h; sourceTree = "<group>"; };
 		EE99CC901CD4753E0043F704 /* SShowPageShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SShowPageShapeView.m; sourceTree = "<group>"; };
 		EE99CC981CD4D1760043F704 /* JFComicBlockingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFComicBlockingCollectionView.h; sourceTree = "<group>"; };
@@ -292,16 +280,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5D953C1CD74A8C0045B1BB /* Accelerate.framework in Frameworks */,
-				044FA33F1A3FD10B0069A867 /* SystemConfiguration.framework in Frameworks */,
-				9D899B0A598386141FC19B40 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04ACB6301A2D50DD00A9FAA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FE7089719E1F4DE810460F0E /* libPods-ComicReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +314,6 @@
 				045F459C1B0F829B003BDD70 /* ComicSearch */,
 				043FE1591A369DF8005F3EBA /* Lib */,
 				043FE16E1A369DF8005F3EBA /* MainController */,
-				043FE1721A369DF8005F3EBA /* SettingController */,
 				043FE1731A369DF8005F3EBA /* SystemClass */,
 			);
 			path = Class;
@@ -344,6 +322,7 @@
 		043FE1591A369DF8005F3EBA /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EE84169920F6057100BFE784 /* WebP */,
 				EE99CCA41CD4D5860043F704 /* JFRefresh */,
 				EEFFAC6B1C8421460072223A /* MONActivityIndicatorView */,
 				045F458E1B0F7AF4003BDD70 /* ProgressHUD */,
@@ -359,13 +338,6 @@
 				043FE1701A369DF8005F3EBA /* ViewController.m */,
 			);
 			path = MainController;
-			sourceTree = "<group>";
-		};
-		043FE1721A369DF8005F3EBA /* SettingController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SettingController;
 			sourceTree = "<group>";
 		};
 		043FE1731A369DF8005F3EBA /* SystemClass */ = {
@@ -715,7 +687,6 @@
 				04E642B81A6507B200FDEFF7 /* StoreModel */,
 				04A42B6E1A37F1FD00507CF3 /* StoreView */,
 				04A42B691A37F1FD00507CF3 /* StoreCell */,
-				04D478D91A63728700236C4A /* StoreCollectionLayout */,
 				0419D08F1A43BD55009C86A0 /* StoreTool */,
 			);
 			path = ComicStore;
@@ -772,8 +743,8 @@
 				04ACB6191A2D50DD00A9FAA6 /* ComicReader */,
 				04ACB6361A2D50DD00A9FAA6 /* ComicReaderTests */,
 				04ACB6181A2D50DD00A9FAA6 /* Products */,
-				C337411806AF5096F8294FC6 /* Pods */,
 				A3B1A303FF180FBA064296AA /* Frameworks */,
+				C7DE9CA5E5D499D08D9306AB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -781,7 +752,6 @@
 			isa = PBXGroup;
 			children = (
 				04ACB6171A2D50DD00A9FAA6 /* ComicReader.app */,
-				04ACB6331A2D50DD00A9FAA6 /* ComicReaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -790,6 +760,7 @@
 			isa = PBXGroup;
 			children = (
 				04ACB6271A2D50DD00A9FAA6 /* Main.storyboard */,
+				EE84169820F5FB0B00BFE784 /* CRConfig.h */,
 				043FE1951A36E205005F3EBA /* ComicReader-Prefix Header.h */,
 				043FE1581A369DF8005F3EBA /* Class */,
 				04ACB6451A2D586200A9FAA6 /* Images.xcassets */,
@@ -869,13 +840,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		04D478D91A63728700236C4A /* StoreCollectionLayout */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StoreCollectionLayout;
-			sourceTree = "<group>";
-		};
 		04D478E41A63BD7100236C4A /* ElementView */ = {
 			isa = PBXGroup;
 			children = (
@@ -916,17 +880,18 @@
 		A3B1A303FF180FBA064296AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE84169520F5F67D00BFE784 /* CFNetwork.framework */,
 				EE5D953B1CD74A8C0045B1BB /* Accelerate.framework */,
-				521533871A11B515AB29F8C4 /* libPods.a */,
+				DD552406A10E96B825A37C4B /* libPods-ComicReader.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C337411806AF5096F8294FC6 /* Pods */ = {
+		C7DE9CA5E5D499D08D9306AB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6E5EE6F8801D00DE5242084 /* Pods.debug.xcconfig */,
-				AE059A3FA974BEBD08D9AD25 /* Pods.release.xcconfig */,
+				0A44817045427958284B6EC3 /* Pods-ComicReader.debug.xcconfig */,
+				03862F97DCF3225ADD5AEB30 /* Pods-ComicReader.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -945,6 +910,13 @@
 				EE3D0B651CD4DF9F008A6FDA /* JFComicShowContentContentCell.xib */,
 			);
 			path = ContentCell;
+			sourceTree = "<group>";
+		};
+		EE84169920F6057100BFE784 /* WebP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebP;
 			sourceTree = "<group>";
 		};
 		EE99CCA41CD4D5860043F704 /* JFRefresh */ = {
@@ -978,12 +950,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ACB63D1A2D50DD00A9FAA6 /* Build configuration list for PBXNativeTarget "ComicReader" */;
 			buildPhases = (
-				2E0D5A2112DBF297AE2158EB /* Check Pods Manifest.lock */,
+				DC21704B88B07D2DD805E7F5 /* [CP] Check Pods Manifest.lock */,
 				04ACB6131A2D50DD00A9FAA6 /* Sources */,
 				04ACB6141A2D50DD00A9FAA6 /* Frameworks */,
 				04ACB6151A2D50DD00A9FAA6 /* Resources */,
-				C3C0C75E012929517EEB96B7 /* Embed Pods Frameworks */,
-				6DD04EE7FCEE21A5BF80CFD6 /* Copy Pods Resources */,
+				7845CBEB2BA4F362DC683858 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -993,24 +964,6 @@
 			productName = ComicReader;
 			productReference = 04ACB6171A2D50DD00A9FAA6 /* ComicReader.app */;
 			productType = "com.apple.product-type.application";
-		};
-		04ACB6321A2D50DD00A9FAA6 /* ComicReaderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04ACB6401A2D50DD00A9FAA6 /* Build configuration list for PBXNativeTarget "ComicReaderTests" */;
-			buildPhases = (
-				04ACB62F1A2D50DD00A9FAA6 /* Sources */,
-				04ACB6301A2D50DD00A9FAA6 /* Frameworks */,
-				04ACB6311A2D50DD00A9FAA6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04ACB6351A2D50DD00A9FAA6 /* PBXTargetDependency */,
-			);
-			name = ComicReaderTests;
-			productName = ComicReaderTests;
-			productReference = 04ACB6331A2D50DD00A9FAA6 /* ComicReaderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1024,11 +977,7 @@
 				TargetAttributes = {
 					04ACB6161A2D50DD00A9FAA6 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = GYGJB4LV5R;
-					};
-					04ACB6321A2D50DD00A9FAA6 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 04ACB6161A2D50DD00A9FAA6;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1046,7 +995,6 @@
 			projectRoot = "";
 			targets = (
 				04ACB6161A2D50DD00A9FAA6 /* ComicReader */,
-				04ACB6321A2D50DD00A9FAA6 /* ComicReaderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1083,59 +1031,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04ACB6311A2D50DD00A9FAA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E0D5A2112DBF297AE2158EB /* Check Pods Manifest.lock */ = {
+		7845CBEB2BA4F362DC683858 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ComicReader/Pods-ComicReader-resources.sh",
+				"${PODS_ROOT}/SlimeRefresh/SlimeRefresh/SlimeRefresh/sr_refresh.png",
+				"${PODS_ROOT}/SlimeRefresh/SlimeRefresh/SlimeRefresh/sr_refresh@2X.png",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sr_refresh.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sr_refresh@2X.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComicReader/Pods-ComicReader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6DD04EE7FCEE21A5BF80CFD6 /* Copy Pods Resources */ = {
+		DC21704B88B07D2DD805E7F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComicReader-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3C0C75E012929517EEB96B7 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1216,23 +1150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04ACB62F1A2D50DD00A9FAA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04ACB63A1A2D50DD00A9FAA6 /* ComicReaderTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		04ACB6351A2D50DD00A9FAA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04ACB6161A2D50DD00A9FAA6 /* ComicReader */;
-			targetProxy = 04ACB6341A2D50DD00A9FAA6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04ACB6271A2D50DD00A9FAA6 /* Main.storyboard */ = {
@@ -1289,7 +1207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1325,7 +1243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1334,71 +1252,103 @@
 		};
 		04ACB63E1A2D50DD00A9FAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6E5EE6F8801D00DE5242084 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0A44817045427958284B6EC3 /* Pods-ComicReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ComicReader/Class/Lib/WebP",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ComicReader-Prefix Header.h";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/AnimatedGIFImageSerialization\"",
+					"\"${PODS_ROOT}/Headers/Public/DBSphereTagCloud\"",
+					"\"${PODS_ROOT}/Headers/Public/FXBlurView\"",
+					"\"${PODS_ROOT}/Headers/Public/MPFoldTransition\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SlimeRefresh\"",
+				);
 				INFOPLIST_FILE = ComicReader/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AnimatedGIFImageSerialization\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DBSphereTagCloud\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FXBlurView\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MPFoldTransition\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SlimeRefresh\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		04ACB63F1A2D50DD00A9FAA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE059A3FA974BEBD08D9AD25 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 03862F97DCF3225ADD5AEB30 /* Pods-ComicReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ComicReader/Class/Lib/WebP",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ComicReader-Prefix Header.h";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/AnimatedGIFImageSerialization\"",
+					"\"${PODS_ROOT}/Headers/Public/DBSphereTagCloud\"",
+					"\"${PODS_ROOT}/Headers/Public/FXBlurView\"",
+					"\"${PODS_ROOT}/Headers/Public/MPFoldTransition\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SlimeRefresh\"",
+				);
 				INFOPLIST_FILE = ComicReader/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AnimatedGIFImageSerialization\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DBSphereTagCloud\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FXBlurView\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MPFoldTransition\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SlimeRefresh\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		04ACB6411A2D50DD00A9FAA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ComicReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComicReader.app/ComicReader";
-			};
-			name = Debug;
-		};
-		04ACB6421A2D50DD00A9FAA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ComicReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComicReader.app/ComicReader";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1419,15 +1369,6 @@
 			buildConfigurations = (
 				04ACB63E1A2D50DD00A9FAA6 /* Debug */,
 				04ACB63F1A2D50DD00A9FAA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04ACB6401A2D50DD00A9FAA6 /* Build configuration list for PBXNativeTarget "ComicReaderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04ACB6411A2D50DD00A9FAA6 /* Debug */,
-				04ACB6421A2D50DD00A9FAA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
