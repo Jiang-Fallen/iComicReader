@@ -75,4 +75,5 @@ alpha:1.0]
 #import "KVNProgress.h"
 #import "JFJumpToControllerManager.h"
 #import "CRConfig.h"
+#import <YYWebImage/YYWebImage.h>
 

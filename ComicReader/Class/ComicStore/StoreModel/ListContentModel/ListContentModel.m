@@ -27,7 +27,7 @@
 }
 
 - (void)setComics:(NSArray *)comics{
-    _comics = [[self class]modelArrayForDataArray:comics];
+    _comics = [[self class] modelArrayForDataArray:comics];
 }
 
 + (instancetype)comicContentModelWithDictionary:(NSDictionary*)dict{
@@ -49,6 +49,8 @@
         self.aID = value;
     }else if ([key isEqualToString:@"description"]){
         self.aDescription = value;
+    }if ([key isEqualToString:@"cover_image_url"]){
+        self.pic = value;
     }
 }
 

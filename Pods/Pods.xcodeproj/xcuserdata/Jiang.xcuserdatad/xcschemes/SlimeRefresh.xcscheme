@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2CECC45696523464A417CC5973539B6C"
+               BlueprintIdentifier = "104AF64B00750E882552054E49C710E6"
                BlueprintName = "SlimeRefresh"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libSlimeRefresh.a">

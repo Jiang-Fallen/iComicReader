@@ -17,7 +17,7 @@
 
 - (void)setContentModel:(ListContentModel *)contentModel{
     _contentModel = contentModel;
-    [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:contentModel.cover_image_url]];
+    self.contentImageView.yy_imageURL = [NSURL URLWithString:contentModel.pic];
     self.titleLabel.text = contentModel.title;
 }
 

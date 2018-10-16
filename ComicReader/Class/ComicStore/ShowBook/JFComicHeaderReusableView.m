@@ -105,7 +105,7 @@
 }
 
 - (void)settingContentImageForURLString{
-    [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:_contentModel.cover_image_url]
+    [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:_contentModel.pic]
                              placeholderImage:nil
                                     completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL)
      {

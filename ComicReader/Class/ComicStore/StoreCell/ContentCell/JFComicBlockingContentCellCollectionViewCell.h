@@ -11,7 +11,7 @@
 
 @interface JFComicBlockingContentCellCollectionViewCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
+@property (weak, nonatomic) IBOutlet YYAnimatedImageView *contentImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property (nonatomic, strong) ListContentModel *contentModel;

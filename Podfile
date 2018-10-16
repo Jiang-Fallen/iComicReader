@@ -16,5 +16,7 @@ target 'ComicReader' do
   pod 'AnimatedGIFImageSerialization'
   pod 'Masonry'
   pod 'FXBlurView'
+  pod 'YYWebImage'
+  pod 'YYImage/WebP'
 
 end

@@ -34,6 +34,10 @@
     _contentCellHeight = [heightArray[_type] floatValue];
 }
 
+- (void)setTopics:(NSMutableArray *)topics{
+    _topics = [ListContentModel modelArrayForDataArray:topics];
+}
+
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
     
 }
@@ -41,7 +45,10 @@
 + (NSMutableArray*)modelArrayByDataArray:(NSArray*)array{
     NSMutableArray *modelArray = [NSMutableArray arrayWithCapacity:array.count];
     for (NSDictionary *dict in array) {
-        NewStoreTitleModel *model = [[NewStoreTitleModel alloc]initWithDictionary:dict];
+        if ([dict[@"item_type"] integerValue] != 4) {
+            continue;
+        }
+        NewStoreTitleModel *model = [[NewStoreTitleModel alloc] initWithDictionary:dict];
         model.type = [array indexOfObject:dict];
         [modelArray addObject:model];
     }

@@ -12,9 +12,6 @@
 		042673C31B086CC8001AB290 /* ComicBookListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042673C11B086CC8001AB290 /* ComicBookListCollectionViewCell.m */; };
 		042673C41B086CC8001AB290 /* ComicBookListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042673C21B086CC8001AB290 /* ComicBookListCollectionViewCell.xib */; };
 		042673C71B08748C001AB290 /* TWSpringyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 042673C61B08748C001AB290 /* TWSpringyFlowLayout.m */; };
-		043FE1541A369C2A005F3EBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FE1521A369C11005F3EBA /* main.m */; };
-		043FE1561A369C52005F3EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043FE1551A369C52005F3EBA /* Info.plist */; };
-		043FE1571A369C63005F3EBA /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB61B1A2D50DD00A9FAA6 /* Info.plist */; };
 		043FE17F1A369DF8005F3EBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FE1701A369DF8005F3EBA /* ViewController.m */; };
 		043FE1801A369DF8005F3EBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FE1751A369DF8005F3EBA /* AppDelegate.m */; };
 		043FE1A61A36EA05005F3EBA /* MyComicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FE1991A36EA05005F3EBA /* MyComicTableViewCell.m */; };
@@ -87,6 +84,8 @@
 		EE7923BF1CD7236900170FF5 /* JFComicShowBookLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7923BE1CD7236900170FF5 /* JFComicShowBookLayout.m */; };
 		EE7923C31CD72DDB00170FF5 /* JFComicHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7923C11CD72DDB00170FF5 /* JFComicHeaderReusableView.m */; };
 		EE7923C41CD72DDB00170FF5 /* JFComicHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7923C21CD72DDB00170FF5 /* JFComicHeaderReusableView.xib */; };
+		EE83AC10217582B50032A841 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04ACB61B1A2D50DD00A9FAA6 /* Info.plist */; };
+		EE83AC11217584D10032A841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB61C1A2D50DD00A9FAA6 /* main.m */; };
 		EE99CC911CD4753E0043F704 /* SShowPageShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99CC901CD4753E0043F704 /* SShowPageShapeView.m */; };
 		EE99CC9A1CD4D1760043F704 /* JFComicBlockingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99CC991CD4D1760043F704 /* JFComicBlockingCollectionView.m */; };
 		EE99CC9D1CD4D18D0043F704 /* JFComicShowContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99CC9C1CD4D18D0043F704 /* JFComicShowContentCollectionView.m */; };
@@ -113,8 +112,6 @@
 		042673C21B086CC8001AB290 /* ComicBookListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicBookListCollectionViewCell.xib; sourceTree = "<group>"; };
 		042673C51B08748C001AB290 /* TWSpringyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSpringyFlowLayout.h; sourceTree = "<group>"; };
 		042673C61B08748C001AB290 /* TWSpringyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSpringyFlowLayout.m; sourceTree = "<group>"; };
-		043FE1521A369C11005F3EBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		043FE1551A369C52005F3EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043FE16F1A369DF8005F3EBA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		043FE1701A369DF8005F3EBA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		043FE1741A369DF8005F3EBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,7 +148,6 @@
 		0446645F1AFE153F00C3B3AF /* ComicStoreBookContentListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicStoreBookContentListModel.m; sourceTree = "<group>"; };
 		044FA33B1A3FD0F40069A867 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		044FA33C1A3FD0F40069A867 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		044FA33E1A3FD10B0069A867 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		045F45901B0F7AF4003BDD70 /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
 		045F45911B0F7AF4003BDD70 /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
 		045F45921B0F7AF4003BDD70 /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
@@ -190,8 +186,6 @@
 		04ACB6221A2D50DD00A9FAA6 /* ComicReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComicReader.xcdatamodel; sourceTree = "<group>"; };
 		04ACB6281A2D50DD00A9FAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04ACB62D1A2D50DD00A9FAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		04ACB6381A2D50DD00A9FAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04ACB6391A2D50DD00A9FAA6 /* ComicReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicReaderTests.m; sourceTree = "<group>"; };
 		04ACB6451A2D586200A9FAA6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04D478E51A63BDA600236C4A /* ResizeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizeLabel.h; sourceTree = "<group>"; };
 		04D478E61A63BDA600236C4A /* ResizeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizeLabel.m; sourceTree = "<group>"; };
@@ -247,6 +241,7 @@
 		EE7923C01CD72DDB00170FF5 /* JFComicHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFComicHeaderReusableView.h; sourceTree = "<group>"; };
 		EE7923C11CD72DDB00170FF5 /* JFComicHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFComicHeaderReusableView.m; sourceTree = "<group>"; };
 		EE7923C21CD72DDB00170FF5 /* JFComicHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFComicHeaderReusableView.xib; sourceTree = "<group>"; };
+		EE83AC12217584E20032A841 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EE84169520F5F67D00BFE784 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		EE84169820F5FB0B00BFE784 /* CRConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRConfig.h; sourceTree = "<group>"; };
 		EE99CC8F1CD4753E0043F704 /* SShowPageShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SShowPageShapeView.h; sourceTree = "<group>"; };
@@ -741,7 +736,6 @@
 			isa = PBXGroup;
 			children = (
 				04ACB6191A2D50DD00A9FAA6 /* ComicReader */,
-				04ACB6361A2D50DD00A9FAA6 /* ComicReaderTests */,
 				04ACB6181A2D50DD00A9FAA6 /* Products */,
 				A3B1A303FF180FBA064296AA /* Frameworks */,
 				C7DE9CA5E5D499D08D9306AB /* Pods */,
@@ -766,40 +760,13 @@
 				04ACB6451A2D586200A9FAA6 /* Images.xcassets */,
 				0419D0751A43B837009C86A0 /* Image */,
 				04402F4D1B08B6C300788DE7 /* resource */,
-				043FE1521A369C11005F3EBA /* main.m */,
-				043FE1551A369C52005F3EBA /* Info.plist */,
-				04ACB62C1A2D50DD00A9FAA6 /* LaunchScreen.xib */,
-				04ACB6211A2D50DD00A9FAA6 /* ComicReader.xcdatamodeld */,
-				04ACB61A1A2D50DD00A9FAA6 /* Supporting Files */,
-			);
-			path = ComicReader;
-			sourceTree = "<group>";
-		};
-		04ACB61A1A2D50DD00A9FAA6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				044FA33E1A3FD10B0069A867 /* SystemConfiguration.framework */,
 				04ACB61B1A2D50DD00A9FAA6 /* Info.plist */,
 				04ACB61C1A2D50DD00A9FAA6 /* main.m */,
+				04ACB62C1A2D50DD00A9FAA6 /* LaunchScreen.xib */,
+				04ACB6211A2D50DD00A9FAA6 /* ComicReader.xcdatamodeld */,
+				EE83AC12217584E20032A841 /* SystemConfiguration.framework */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		04ACB6361A2D50DD00A9FAA6 /* ComicReaderTests */ = {
-			isa = PBXGroup;
-			children = (
-				04ACB6391A2D50DD00A9FAA6 /* ComicReaderTests.m */,
-				04ACB6371A2D50DD00A9FAA6 /* Supporting Files */,
-			);
-			path = ComicReaderTests;
-			sourceTree = "<group>";
-		};
-		04ACB6371A2D50DD00A9FAA6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				04ACB6381A2D50DD00A9FAA6 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = ComicReader;
 			sourceTree = "<group>";
 		};
 		04C6AF461AFF152E0002950A /* BookReader */ = {
@@ -1004,11 +971,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE83AC10217582B50032A841 /* Info.plist in Resources */,
 				043FE1B01A36EAEC005F3EBA /* ContentImageView.xib in Resources */,
 				042673C41B086CC8001AB290 /* ComicBookListCollectionViewCell.xib in Resources */,
 				045F459B1B0F7BC4003BDD70 /* KVNProgressView.xib in Resources */,
 				EE7923BC1CD71E5F00170FF5 /* JFComicSectionsListViewController.xib in Resources */,
-				043FE1561A369C52005F3EBA /* Info.plist in Resources */,
 				04ACB6461A2D586200A9FAA6 /* Images.xcassets in Resources */,
 				EE4B0FBD1CD843F70028CFCD /* JFShowContentCollectionViewCell.xib in Resources */,
 				EE3D0B671CD4DF9F008A6FDA /* JFComicShowContentContentCell.xib in Resources */,
@@ -1036,7 +1003,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		7845CBEB2BA4F362DC683858 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -1099,9 +1066,9 @@
 				044FA33D1A3FD0F40069A867 /* Reachability.m in Sources */,
 				043FE1A61A36EA05005F3EBA /* MyComicTableViewCell.m in Sources */,
 				EE3D0B5C1CD4DF49008A6FDA /* JFComicBlockingContentCellCollectionViewCell.m in Sources */,
-				043FE1571A369C63005F3EBA /* Info.plist in Sources */,
 				043FE1AB1A36EA05005F3EBA /* MyComicTool.m in Sources */,
 				0405890B1A5FA76700AB676B /* ComicStoreContentListCollectionView.m in Sources */,
+				EE83AC11217584D10032A841 /* main.m in Sources */,
 				04E642B11A64BAE600FDEFF7 /* GetRequestUrlTool.m in Sources */,
 				04A42B721A37F3E000507CF3 /* ComicStoreHeaderView.m in Sources */,
 				EE99CCA31CD4D2000043F704 /* JFComicListTitleView.m in Sources */,
@@ -1143,7 +1110,6 @@
 				EE99CC9D1CD4D18D0043F704 /* JFComicShowContentCollectionView.m in Sources */,
 				045F45991B0F7AF4003BDD70 /* KVNProgress.m in Sources */,
 				048F24C41AC2603F00B289A4 /* NewRequestTool.m in Sources */,
-				043FE1541A369C2A005F3EBA /* main.m in Sources */,
 				04ACB6231A2D50DD00A9FAA6 /* ComicReader.xcdatamodeld in Sources */,
 				EE99CCB31CD4D9C00043F704 /* JFComicStoreListBaseCell.m in Sources */,
 				044664601AFE153F00C3B3AF /* ComicStoreBookContentListModel.m in Sources */,

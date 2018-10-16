@@ -11,7 +11,7 @@
 
 @interface JFComicShowImageContentCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
+@property (weak, nonatomic) IBOutlet YYAnimatedImageView *contentImageView;
 
 @property (nonatomic, strong) ListContentModel *contentModel;
 

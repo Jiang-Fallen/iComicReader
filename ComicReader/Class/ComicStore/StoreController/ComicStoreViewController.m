@@ -59,7 +59,7 @@
 
 - (void)loadModelData{
     __unsafe_unretained typeof(self) p = self;
-    [[ComicStoreTool sharedRequestTool]requestComicStoreNewModelCompletion:^(NSMutableArray *blockHeaderArray, NSMutableArray *blockListArray) {
+    [[ComicStoreTool sharedRequestTool] requestComicStoreNewModelCompletion:^(NSMutableArray *blockHeaderArray, NSMutableArray *blockListArray) {
         [p.showWaitView removeFromSuperview];
         p.headerModelArray = blockHeaderArray;
         p.listModelArray = blockListArray;
@@ -78,25 +78,6 @@
     _showWaitView = showWaitView;
 }
 
-- (void)requestDataForContentListWithModel:(NewStoreTitleModel *)model{
-    NSString *urlString = @"https://api.kkmh.com/v1/topic_new/lists/get_by_tag";
-    
-    NSDictionary *parameter = @{@"count": @(model.contentCount),
-                                @"since": @0,
-                                @"tag": model.tag_id,
-                                @"gender": @1,
-                                @"sort": @1,
-                                @"query_category": @{@"pay_status": @-1, @"update_status": @-1}};
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSMutableArray *array = [ListContentModel modelArrayForDataArray:responseObject[@"data"][@"topics"]];
-        model.contentArray = array;
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
-}
-
 - (void)comicOrderSelectedIndex:(NSInteger)index{
     [self.contentListView showRefreshState:stateLoading];
 //    [self otherCatalogListRequest:_currentIndexPath];
@@ -111,9 +92,6 @@
 - (void)setListModelArray:(NSMutableArray *)listModelArray{
     _listModelArray = listModelArray;
     self.listRowContentModelArray = listModelArray;
-    for (NewStoreTitleModel *listModel in  listModelArray) {
-        [self requestDataForContentListWithModel:listModel];
-    }
 }
 
 - (void)setListRowContentModelArray:(NSMutableArray *)listRowContentModelArray{

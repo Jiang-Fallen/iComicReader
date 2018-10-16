@@ -17,6 +17,16 @@
 
 @implementation ComicStoreTool
 
++ (AFHTTPSessionManager *)requestManager{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    long long int timeInt =  [[NSDate date] timeIntervalSince1970] * 1000;
+    NSString *cookieStr = [NSString stringWithFormat:@"kk_s_t=%lld", timeInt];
+    [manager.requestSerializer setValue:cookieStr forHTTPHeaderField:@"Cookie"];
+    [manager.requestSerializer setValue:@"com.kuaikan.comic" forHTTPHeaderField:@"Package-Id"];
+    [manager.requestSerializer setValue:@"Kuaikan/5.13.3/513003(iPhone;iOS 12.0.1;Scale/3.00;WiFi;2436*1125)" forHTTPHeaderField:@"User-Agent"];
+    return manager;
+}
+
 #pragma mark - Request Method
 - (void)requestArrayByAsquireHeaderModelCompletion:(void (^)(NSMutableArray *blockHeaderArray))success
                                            failure:(void (^)(NSError *))failure{
@@ -106,24 +116,19 @@
 - (void)requestCategoryList:(void (^)(NSMutableArray *blockListArray))success
                     failure:(void (^)(NSError *error))failure{
     
-    NSString *urlString = @"https://api.kkmh.com/v1/topic_new/lists/get_by_tag";
-    
-    NSDictionary *params = @{@"count": @20,
-                             @"since": @0,
-                             @"tag": @0,
+    NSString *urlString = @"https://api.kkmh.com/v1/topic_new/discovery_list";
+    NSDictionary *params = @{@"operator_count": @14,
                              @"gender": @1,
-                             @"sort": @1,
-                             @"query_category": @{@"pay_status": @-1, @"update_status": @-1}
                              };
     
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    AFHTTPSessionManager *manager = [ComicStoreTool requestManager];
     [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if ([responseObject[@"code"] intValue] != 200) {
             NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:[responseObject[@"code"] intValue] userInfo:nil];
             failure(error);
             return ;
         }
-        NSArray *array = responseObject[@"data"][@"tags"];
+        NSArray *array = responseObject[@"data"][@"infos"];
         NSMutableArray *modelArray = [NewStoreTitleModel modelArrayByDataArray:array];
         success(modelArray);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

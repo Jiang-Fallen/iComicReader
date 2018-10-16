@@ -50,8 +50,7 @@
 - (void)setContentModel:(NewStoreTitleModel *)contentModel{
     _contentModel = contentModel;
     self.headerView.contentModel = contentModel;
-    self.contentModelArray = contentModel.contentArray;
-    [contentModel addObserver:self forKeyPath:@"contentArray" options:NSKeyValueObservingOptionNew context:nil];
+    self.contentModelArray = contentModel.topics;
     [self contentModelCompletionOpration];
 }
 
@@ -61,10 +60,6 @@
 }
 
 #pragma mark - kvo
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-    self.contentModelArray = _contentModel.contentArray;
-    [self.contentCollectionView reloadData];
-}
 
 #pragma mark -
 
@@ -103,7 +98,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     ListContentModel *model = self.contentModelArray[indexPath.row];
     JFComicSectionsListViewController *controller = [[JFComicSectionsListViewController alloc]init];
-    controller.bookID = model.aID;
+    controller.bookID = model.target_id.stringValue;
     [[JFJumpToControllerManager shared].navigation pushViewController:controller animated:YES];
 }
 

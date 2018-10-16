@@ -10,6 +10,8 @@
 
 @interface ComicStoreTool : NSObject
 
++ (AFHTTPSessionManager *)requestManager;
+
 - (void)requestArrayByAsquireHeaderModelCompletion:(void (^)(NSMutableArray *blockHeaderArray))success
                                            failure:(void (^)(NSError *error))failure;
 
