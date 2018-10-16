@@ -84,7 +84,6 @@
 		EE7923BF1CD7236900170FF5 /* JFComicShowBookLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7923BE1CD7236900170FF5 /* JFComicShowBookLayout.m */; };
 		EE7923C31CD72DDB00170FF5 /* JFComicHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7923C11CD72DDB00170FF5 /* JFComicHeaderReusableView.m */; };
 		EE7923C41CD72DDB00170FF5 /* JFComicHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7923C21CD72DDB00170FF5 /* JFComicHeaderReusableView.xib */; };
-		EE83AC10217582B50032A841 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04ACB61B1A2D50DD00A9FAA6 /* Info.plist */; };
 		EE83AC11217584D10032A841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB61C1A2D50DD00A9FAA6 /* main.m */; };
 		EE99CC911CD4753E0043F704 /* SShowPageShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99CC901CD4753E0043F704 /* SShowPageShapeView.m */; };
 		EE99CC9A1CD4D1760043F704 /* JFComicBlockingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99CC991CD4D1760043F704 /* JFComicBlockingCollectionView.m */; };
@@ -971,7 +970,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE83AC10217582B50032A841 /* Info.plist in Resources */,
 				043FE1B01A36EAEC005F3EBA /* ContentImageView.xib in Resources */,
 				042673C41B086CC8001AB290 /* ComicBookListCollectionViewCell.xib in Resources */,
 				045F459B1B0F7BC4003BDD70 /* KVNProgressView.xib in Resources */,
